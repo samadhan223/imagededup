@@ -7,5 +7,5 @@ fastapi
 uvicorn
 gunicorn==19.9.0
 httptools
-imagededup ==0.3.2
+imagededup 
 python-multipart
