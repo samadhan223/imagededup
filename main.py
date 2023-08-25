@@ -34,6 +34,10 @@ async def create_upload_file(file: UploadFile):
         os.remove(file_path)
         return{"isDocDuplicate": True }
 
+
+# if __name__ == '__main__':
+    # uvicorn.run(app, host='0.0.0.0', port=10000)
+
     #return {"info": f"file '{file.filename}' saved at '{file_location}'"}
 
 
