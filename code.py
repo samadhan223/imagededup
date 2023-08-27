@@ -8,7 +8,7 @@ def finddedup():
     cnn = CNN()
 
 
-    image_dir = "uploaded_files/"
+    image_dir = "upload_files/"
 
 
     encodings = cnn.encode_images(image_dir=image_dir)
