@@ -4,11 +4,11 @@ from code import finddedup
 
 import os
 #from app import app
-import urllib.request
+#import urllib.request
 #from flask import Flask, flash, request, redirect, url_for, render_template
 #from werkzeug.utils import secure_filename
 
-import pandas as pd
+#import pandas as pd
 # pip install python-multipart
 
 from fastapi import FastAPI, File, UploadFile
