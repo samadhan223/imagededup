@@ -19,7 +19,7 @@ app = FastAPI()
 @app.post("/document-dedup")
 async def create_upload_file(file: UploadFile):
 
-    file_location = f"uploaded_files/{file.filename}"
+    file_location = f"upload_files/{file.filename}"
     with open(file_location, "wb+") as file_object:
         file_object.write(file.file.read())
     tuple1 = finddedup()
@@ -27,7 +27,7 @@ async def create_upload_file(file: UploadFile):
     if file.filename in Not_duplicate:
         return { "isDocDuplicate": False }
     elif file.filename in Duplicate:
-        folder_path = "uploaded_files/"
+        folder_path = "upload_files/"
         file_name = file.filename  # Replace with the name of the file you want to delete
 
         file_path = os.path.join(folder_path, file_name)
